@@ -1,9 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UserModule } from '../user/user.module';
 import config from '../../ormconfig';
 @Module({
-  imports: [TypeOrmModule.forRoot(config), UserModule],
+  imports: [TypeOrmModule.forRoot(config)],
   controllers: [],
   providers: [],
 })
